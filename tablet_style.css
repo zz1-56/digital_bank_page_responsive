@@ -1,0 +1,228 @@
+@media (min-width: 768px) and (max-width: 1024px) and (min-height: 601px) {
+  /* constant classes */
+  .desktop_version {
+    display: none;
+  }
+  .mobile_version {
+    display: block;
+    white-space: pre-line;
+  }
+
+  /* header section */
+
+  header {
+    padding: 4% 5%;
+  }  
+  header nav .logo{
+    width: 35%;
+    
+  }
+  header nav .nav-mobile{
+    width: 6%;
+  }
+  
+
+  /* first section */
+  .parent .fs .title h1 {
+    font-size: 3.3rem;
+  }
+  .parent .fs .title p {
+    font-size: larger;
+  }
+  .parent .fs .title button {
+    padding: 3%;
+  }
+
+  /* features section */
+  .parent .features h2 {
+    font-size: 3.3rem;
+  }
+  .parent .features p {
+    font-size: 1.3rem;
+  }
+
+
+  .parent .features .features_parent div {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .features_parent div img{
+    width: 30%;
+  }
+  .parent .features .features_parent div h3 {
+    width: fit-content;
+    font-size: 2.2rem;
+  }
+  .parent .features .features_parent div p {
+    width: fit-content;
+    font-size: 1rem;
+  }
+
+  /* articles section */
+  .parent .articles h3 {
+    font-size: 2.5rem;
+  }
+  .parent .articles .parent_articles div{
+    width: 80%;
+  }  
+  .parent .articles .parent_articles div img{
+    max-height: 352px;
+  }
+  .parent .articles .parent_articles div .by{
+    font-size: 0.9rem;
+    padding: 4% 7%;
+  }
+  .parent .articles .parent_articles div h2{
+    font-size: 1.8rem;
+  }
+  .parent .articles .parent_articles div p{
+    white-space: unset;
+    width: 70%;
+    font-size: large;
+  }
+
+  /* footer section */
+  footer .footer_logo {
+    width: 35%;
+    margin: 6%;
+  }
+  footer .social_media {
+    margin-top: 5%;
+  }
+  footer .social_media a {
+    width: 100%;
+  }
+  footer .social_media a img {
+    width: 100%;
+
+  }
+  footer .footer_links ul li {
+    font-size: 1.5rem;
+  }
+  footer .footer_request button {
+    margin-top: 20%;
+    padding: 8.5%;
+    width: 100%;
+    font-size: large;
+  }
+}
+/* <div class="parent">
+    <div class="nav">
+        <div class="shapes">
+            <div></div>
+            <div></div>     
+            <div></div>     
+        </div>
+        <div class="circle"></div>
+   
+    </div>
+
+    <div class="squares_parent">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html, body {
+  margin:0;
+  padding: 0;
+  width: 340px;
+  height: 200px;
+  background:#e2ebf4;
+
+  }
+
+.parent{
+  margin-top: 3%;
+}
+.nav{
+  background:#000000;
+  width: 80%;
+  height: 24px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  
+}
+.parent .nav .shapes {
+  display: flex;
+  width: 30%;
+  gap: 8px;
+
+}
+.parent .nav .shapes div {
+  background: #d9d9d9;
+  height: 8px;
+  width: 50%;
+
+}
+.parent .nav .circle {
+  background-color:#d9d9d9 ;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+}
+
+/* square shapes */
+
+/* .parent .squares_parent{
+
+  display: flex;
+  width: 70%;
+  margin: auto;
+  background: red;
+  height: 70px;
+  margin-top: 7%;
+
+  gap: 10px;
+  flex-wrap: wrap;
+  
+  
+}
+
+.parent .squares_parent div {
+  background-color: #d9d9d9;
+  width:calc(50% - 5px);
+  height: 36px;
+  
+
+}  */

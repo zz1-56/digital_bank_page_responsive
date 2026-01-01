@@ -1,0 +1,470 @@
+body{
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Public Sans', sans-serif;
+    background-color: hsl(220, 16%, 96%);   
+}
+
+
+
+
+/* constant classres */
+
+
+
+
+/* hide navbar mobile */
+header nav .nav-mobile{
+    display: none;
+}
+.desktop_version {
+    white-space: pre-line;
+}
+
+.mobile_version{
+    display: none;
+}
+
+
+* button{
+    padding: 0.96% 1%;
+    width:13%;
+    border: none;
+    border-radius:30px;
+    background: linear-gradient(
+    to left,
+    hsl(136, 64%, 51%),
+    hsl(192, 69%, 51%)
+    );
+    font-weight: 600;
+    color: hsl(0, 0%, 98%);
+    cursor: pointer;
+}
+
+* button:hover {
+
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25);
+}
+
+* p {
+    line-height: 1.5;
+    color: hsl(233, 8%, 62%);
+}
+
+.parent .fs .phons_mobile{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header navbar section */
+
+
+
+
+header nav{
+    
+    background-color: white;
+    width: 100%;
+    position: relative  ;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+
+}
+
+
+
+header nav ul{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    list-style: none;
+    margin: 0;
+
+}
+
+
+
+header nav ul li {
+    
+    position: relative;
+
+    cursor: pointer;
+    padding: 10% 0;
+}
+
+header nav ul li  a {
+    text-decoration: none;
+    color: hsl(233, 8%, 62%);
+}
+header nav ul li:hover  a{
+    color: hsl(233, 26%, 24%);
+}
+header nav ul li::after{
+    content: '';
+    height: 4px;
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(
+    to right,
+    hsl(136, 64%, 51%),
+    hsl(192, 69%, 51%)
+    );
+
+    visibility: hidden;
+
+}
+header nav ul li:hover::after{
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* first section */
+.parent .fs {
+    width: 100%;
+    display: flex;
+    min-height: 472px;
+    background-color: white;
+    position: relative;
+
+
+}
+
+
+
+.parent .fs .title{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 5%;
+    padding-left: 10%;
+    
+
+}
+.parent .fs .title h1,p{
+    margin: 0;
+
+    display: block;
+
+}
+
+.parent .fs .title h1{
+    color: hsl(233, 26%, 24%);
+    font-size: xxx-large;
+    font-weight: 300;
+}
+.parent .fs .title p {
+    color: hsl(233, 8%, 62%);
+    line-height: 1.5;
+}
+
+.parent .fs .title button {
+    align-self: flex-start;
+    width: 37%;
+    padding: 3%;
+
+}
+
+
+
+.parent .fs .images{
+    background-image: url(images/bg-intro-desktop.svg);
+    background-size: 128%;
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: -17%;
+    width: 54%;
+    max-height: 564px;
+
+    
+}
+
+.parent .fs .images .phons_desktop {
+    width: 79%;
+    position: relative;
+    margin-top: -5%;
+
+}
+
+
+
+
+
+/* fetures section */
+
+.parent .features {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 3%;
+    padding-left: 6%;
+    
+}
+.parent .features h2{
+    font-size: xx-large;
+    font-weight: 400;
+}
+.parent .features h2, .parent .features p {
+    width: 100%;
+    padding-left: 2%;
+    line-height: 1.7;
+}
+
+
+.parent .features .features_parent {
+    margin-top: 6%;
+    display: flex;
+    width: 97%;
+    justify-content: space-between;
+    /* gap: 5%; */
+    align-items: center;
+}
+
+.parent .features .features_parent div  h3{
+
+    font-size: x-large;
+    padding-top: 14%;
+    padding-bottom: 10%;
+    font-weight: 400;
+    margin: 0;
+}
+.parent .features .features_parent div *  {
+    padding-left:9%;
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Articles */
+.parent .articles {
+    margin-top: 7%;
+    padding: 10% 6.5%;
+    background-color: hsl(0, 0%, 98%);
+    padding-left: 8%;
+}
+.parent .articles .parent_articles{
+    width: 100%;
+    display: flex;
+    gap: 3%;
+    
+}
+.parent .articles h3{
+    font-size: xx-large;
+    font-weight: 200;
+    padding-bottom: 1%;
+}
+.parent .articles .parent_articles div {
+    width: 23%;
+    background-color: hsl(0, 100%, 100%);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    min-width: 252px;
+}
+.parent .articles .parent_articles div *{
+    width: fit-content;
+    padding-left: 8%;
+
+}
+
+.parent .articles .parent_articles div img {
+    border-radius: 5px 5px 0 0;
+    padding: 0;
+    width: 100%;
+    max-height: 163px;
+}
+.parent .articles .parent_articles div .by{
+    font-size: 10px;
+    display: block;
+    color: hsl(233, 8%, 62%);
+    padding-top: 8%;
+    padding-bottom: 7%;
+    
+}
+
+
+.parent .articles .parent_articles div h2 {
+    color: hsl(233, 26%, 24%);
+    font-weight: 300;
+    font-size: medium;
+    line-height: 1.2;
+    margin: 0;
+    
+}
+.parent .articles .parent_articles div h2:hover {
+    color: hsl(136, 64%, 51%);
+    cursor: pointer;
+}
+.parent .articles .parent_articles div p{
+    padding-top: 2%;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+/* footer */
+footer {
+    background-color: hsl(233, 26%, 24%);
+    color: hsl(0, 0%, 100%);
+    padding: 2% 8%;
+    display: flex;
+    gap: 7%;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 92px;
+
+    
+    
+}
+
+
+
+
+
+/* logo section (in footer) */
+footer .footer_logo{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+
+}
+footer .footer_logo .social_media {
+    display: flex;
+    flex-direction: row;
+    gap: 9%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/* conect us (in footer) */
+footer .footer_links {
+    display: flex;
+    gap: 60px;
+
+}
+footer .footer_links ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    
+
+
+}
+
+footer .footer_links ul li a {
+    font-size: smaller;
+    text-decoration: none;
+    color: hsl(220, 16%, 96%);
+    cursor: pointer;
+
+}
+
+footer .footer_links ul li a:hover {
+    text-decoration: underline;
+    color: hsl(136, 64%, 51%);
+}
+
+
+
+
+
+
+/* request section (in footer) */
+footer .footer_request{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    direction: rtl;
+    margin-left: 20%;
+    
+
+}
+footer .footer_request p {
+    margin: 0;
+    font-size: 16px;
+    
+    direction: ltr;
+}
+footer .footer_request button {
+    display: block;
+    
+    width: 70%;
+    padding: 5.5%;
+    
+
+}
+
+
+
+
