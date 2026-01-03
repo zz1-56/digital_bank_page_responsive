@@ -165,8 +165,6 @@ header nav ul li:hover::after{
     min-height: 472px;
     background-color: white;
     position: relative;
-
-
 }
 
 
@@ -296,14 +294,14 @@ header nav ul li:hover::after{
 /* Articles */
 .parent .articles {
     margin-top: 7%;
-    padding: 10% 6.5%;
+    padding: 10% 2.5%;
     background-color: hsl(0, 0%, 98%);
     padding-left: 8%;
 }
 .parent .articles .parent_articles{
     width: 100%;
     display: flex;
-    gap: 3%;
+    justify-content: space-between;
     
 }
 .parent .articles h3{
@@ -441,6 +439,9 @@ footer .footer_links ul li a:hover {
 
 
 /* request section (in footer) */
+footer{
+    padding: 3% 5%;
+}
 footer .footer_request{
     display: flex;
     flex-direction: column;
