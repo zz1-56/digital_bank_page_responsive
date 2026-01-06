@@ -1,5 +1,5 @@
 /* media queries mobile */
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-height: 601px){
     /* constant classes */
 
     .desktop_version {
@@ -169,7 +169,7 @@
         min-width: 330px;
     }
     .parent .articles .parent_articles div img{
-        max-height: 200px;
+        max-height:364px ;
     }
     .parent .articles .parent_articles div .by{
         font-size: 0.7em;
@@ -200,6 +200,7 @@
         text-align: center;
         gap: 5%;
         padding: 10% 5%;
+        margin-top: 5%;
     }
     footer .footer_logo{
         margin: 10%;
