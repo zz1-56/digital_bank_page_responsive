@@ -1,5 +1,5 @@
 /* media queries mobile */
-@media (max-width: 1024px) and (min-height: 601px){
+@media (max-width: 1024px) {
     /* constant classes */
 
     .desktop_version {
